@@ -7,36 +7,53 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+
     <ImageView
         android:id="@+id/imgTrofeu"
-
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_centerInParent="true"
         android:scaleType="centerCrop"
         android:src="@drawable/trofeu" />
 
+
     <ImageView
         android:id="@+id/imgVoley"
-        android:layout_below="@+id/imgTrofeu"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_below="@+id/imgTrofeu"
+        android:layout_alignParentRight="true"
         android:scaleType="centerCrop"
         android:src="@drawable/voleyball" />
 
     <ImageView
         android:id="@+id/imgBoxe"
-        android:layout_below="@+id/imgVoley"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_below="@+id/imgTrofeu"
+        android:layout_InParent="true"
+        android:layout_marginRight="5dp"
         android:scaleType="centerCrop"
         android:src="@drawable/boxe" />
 
     <ImageView
         android:id="@+id/imgEsgrima"
-        android:layout_below="@+id/imgBoxe"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_above="@id/imgTrofeu"
+        android:layout_alignLeft="@id/imgBoxe"
         android:scaleType="centerCrop"
         android:src="@drawable/esgrima" />
+
+    <ImageView
+        android:id="@+id/imgTenis"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@id/imgTrofeu"
+        android:layout_toRightOf="@id/imgTrofeu"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tenisdemesa" />
+
 
 </RelativeLayout>
